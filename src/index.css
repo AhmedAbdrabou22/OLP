@@ -11,3 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+/** general Style */
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+/* Add Style Home  */
+.mainHome{
+  padding:10px;
+}
+.addLevelIcon{
+  /*font-size: 35px;
+  */border: none;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#icon{
+  margin-left: 10px;
+}
+.addLevelIconL:hover{
+  background-color: red;
+}
+
+.icons{
+  cursor: pointer;
+}
+.edit{
+  color: white;
+}
+.delete{
+  color: red;
+}
