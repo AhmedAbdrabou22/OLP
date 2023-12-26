@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from "react-redux"
-
+import { IoIosAddCircle } from "react-icons/io";
 import { setLevelData } from '../../redux/actions/SetNewLevels';
 
 const AddLevel = () => {
@@ -32,13 +30,14 @@ const AddLevel = () => {
         }
     } , [load])
 
+    
     return (
 
 
 
         <div dir='rtl' className='mainHome'>
             <button onClick={handleShow} className='addLevelIcon'>
-                <FontAwesomeIcon id="icon" icon={faPlus} />
+            <IoIosAddCircle id="icon"/>
                 <span>اضافة مستوي</span>
             </button>
 

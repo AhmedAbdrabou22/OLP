@@ -12,5 +12,15 @@ const setLevelData = (data) => {
         }
     }
 }
+const setMaterialData = (data) => {
+    return async (dispatch) => {
+        try {
+            let res = await baseURL.post('api/new-material' ,data)
+            dispatch({ type: "PUSHMATERIALS", payload: res })
+        } catch (e) {
+            dispatch({ type: "Get_Errors", payload: "Error through Loadin Data" + e })
+        }
+    }
+}
 
-export {setLevelData}
+export {setLevelData ,setMaterialData}

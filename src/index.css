@@ -53,3 +53,23 @@ code {
 .delete{
   color: red;
 }
+
+
+.notify {
+  position: absolute;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.notify.slide {
+  transform: translateX(10px) ;
+  -webkit-transform: translateX(10px) ;
+  -moz-transform: translateX(10px) ;
+  -ms-transform: translateX(10px) ;
+  -o-transform: translateX(10px) ;
+}
